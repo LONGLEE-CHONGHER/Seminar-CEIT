@@ -30,6 +30,7 @@ import java.io.InputStreamReader;
 
 public class Home extends ActionBarActivity {
 
+    // Declare ປະກາດຕົວແປ
     private UserTABLE objUserTABLE;
     private FoodTABLE objFoodTABLE;
     private EditText edtUser, edtPassword;
@@ -73,8 +74,8 @@ public class Home extends ActionBarActivity {
             MyAlertDialog objMyAlert = new MyAlertDialog();
             objMyAlert.alertDialog(Home.this, "BLANK", "Please insert all blank");
         } else {
-            //Check User
-            checkUser();
+
+            checkUser(); //Check User
         }
 
     }   // clickLogin
