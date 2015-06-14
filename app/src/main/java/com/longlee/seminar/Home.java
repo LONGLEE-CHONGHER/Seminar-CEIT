@@ -51,6 +51,7 @@ public class Home extends ActionBarActivity {
         //testerAddValue();
 
         //Delete All data
+        // After load data
         deleteAllData();
 
         //Synchronize JSON to SQLite
