@@ -80,7 +80,7 @@ public class Home extends ActionBarActivity {
 
     }   // clickLogin
 
-    // This Method is check User in Database
+    // This Method is check User in the Database
     private void checkUser() {
 
         try {
