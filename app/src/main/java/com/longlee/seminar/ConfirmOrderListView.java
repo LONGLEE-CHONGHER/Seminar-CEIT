@@ -94,7 +94,7 @@ public class ConfirmOrderListView extends ActionBarActivity {
 
     private void clearAlldata() {
         SQLiteDatabase objSQLite = openOrCreateDatabase("restaurant.db", MODE_PRIVATE, null);
-        objSQLite.delete("orderTABLE", null, null);
+        objSQLite.delete("ordertable", null, null);
     }
 
     private void upValueToMySQL(int i) {
@@ -176,8 +176,8 @@ public class ConfirmOrderListView extends ActionBarActivity {
     private void deleteOrder(int intDelete) {
 
         SQLiteDatabase objSqLiteDatabase = openOrCreateDatabase("restaurant.db", MODE_PRIVATE, null);
-        Cursor objCursor = objSqLiteDatabase.rawQuery("SELECT * FROM orderTABLE", null);
-        objSqLiteDatabase.delete("orderTABLE", "_id" + "=" + intDelete + 1, null);
+        Cursor objCursor = objSqLiteDatabase.rawQuery("SELECT * FROM ordertable", null);
+        objSqLiteDatabase.delete("ordertable", "_id" + "=" + intDelete + 1, null);
 
         Log.d("Restaurant", "id==>" + Integer.toString(intDelete));
 

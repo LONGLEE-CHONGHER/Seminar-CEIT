@@ -200,7 +200,7 @@ public class OrderActivity extends ActionBarActivity {
         try {
 
             HttpClient objHttplient = new DefaultHttpClient();
-            HttpPost objHttpPost = new HttpPost("http://chongher.net84.net/get_data_food.php");
+            HttpPost objHttpPost = new HttpPost("http://chongher.net84.net/food.php");
             HttpResponse objHttpResponse = objHttplient.execute(objHttpPost);
             HttpEntity objHttpEntity = objHttpResponse.getEntity();
             objInputStream = objHttpEntity.getContent();

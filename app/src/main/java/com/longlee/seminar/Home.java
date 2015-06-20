@@ -145,9 +145,9 @@ public class Home extends ActionBarActivity {
 
     private void deleteAllData() {
         SQLiteDatabase objSQLite = openOrCreateDatabase("restaurant.db", MODE_PRIVATE, null);
-        objSQLite.delete("userTABLE", null, null);
-        objSQLite.delete("foodTABLE", null, null);
-        objSQLite.delete("orderTABLE", null, null);
+        objSQLite.delete("usertable", null, null);
+        objSQLite.delete("foodtable", null, null);
+        objSQLite.delete("ordertable", null, null);
     }   // deleteAllData
 
     private void synJSONtoSQLite() {
@@ -165,7 +165,7 @@ public class Home extends ActionBarActivity {
         try {
 
             HttpClient objHttplient = new DefaultHttpClient();
-            HttpPost objHttpPost = new HttpPost("http://chongher.net84.net/get_data_user.php");
+            HttpPost objHttpPost = new HttpPost("http://chongher.net84.net/user.php");
             HttpResponse objHttpResponse = objHttplient.execute(objHttpPost);
             HttpEntity objHttpEntity = objHttpResponse.getEntity();
             objInputStream = objHttpEntity.getContent();

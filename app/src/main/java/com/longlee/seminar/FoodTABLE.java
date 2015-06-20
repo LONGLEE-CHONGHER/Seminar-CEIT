@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class FoodTABLE {
 
-    public static final String FOOD_TABLE = "foodTABLE";
+    public static final String FOOD_TABLE = "foodtable";
     public static final String COLUMN_ID_FOOD = "_id";
     public static final String COLUMN_FOOD = "Food";
     public static final String COLUMN_PRICE = "Price";

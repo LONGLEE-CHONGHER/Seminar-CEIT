@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class UserTABLE {
 
-    public static final String USER_TABLE = "userTABLE";
+    public static final String USER_TABLE = "usertable";
     public static final String COLUMN_ID_USER = "_id";
     public static final String COLUMN_USER = "User";
     public static final String COLUMN_PASSWORD = "Password";
