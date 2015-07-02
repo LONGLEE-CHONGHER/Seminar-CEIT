@@ -109,7 +109,7 @@ public class ConfirmOrderListView extends ActionBarActivity {
             objNameValuePairs.add(new BasicNameValuePair("Amount", strListAmount[i]));
 
             HttpClient objHttpClient = new DefaultHttpClient();
-            HttpPost objHttpPost = new HttpPost("http://chongher.net84.net/get_data_officer.php");
+            HttpPost objHttpPost = new HttpPost("http://chongher.net84.net/order.php");
             objHttpPost.setEntity(new UrlEncodedFormEntity(objNameValuePairs, "UTF-8"));
             objHttpClient.execute(objHttpPost);
 

@@ -95,7 +95,7 @@ public class OrderActivity extends ActionBarActivity {
 
     private void alertAmountOrder() {
 
-        CharSequence[] charAmount = {"1", "2", "3", "4", "5"};
+        CharSequence[] charAmount = {"1 ຈານ", "2 ຈານ", "3 ຈານ", "4 ຈານ", "5 ຈານ"};
 
         AlertDialog.Builder objBuilder = new AlertDialog.Builder(this);
         objBuilder.setIcon(R.drawable.amount);
@@ -106,19 +106,19 @@ public class OrderActivity extends ActionBarActivity {
 
                 switch (which) {
                     case 0:
-                        strAmount = "1";
+                        strAmount = "1 ຈານ";
                         break;
                     case 1:
-                        strAmount = "2";
+                        strAmount = "2 ຈານ";
                         break;
                     case 2:
-                        strAmount = "3";
+                        strAmount = "3 ຈານ";
                         break;
                     case 3:
-                        strAmount = "4";
+                        strAmount = "4 ຈານ";
                         break;
                     case 4:
-                        strAmount = "5";
+                        strAmount = "5 ຈານ";
                         break;
                 }   // switch
 
